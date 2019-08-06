@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="finalproject.css">
+  <script src="finalproject.js"> </script>
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark topnav p-0">
+    <a class="navbar-brand pl-4" href="#">My Body My Rights</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="navlink">Home</a>
+        </li>
+        <li class="nav-item">
+        <a href="news.html" class="navlink">Info & News</a>
+        </li>
+        <li class="nav-item">
+         <a href="otheroptions.html" class="navlink">Other Options</a>
+        </li>
+        <li class="nav-item active ">
+        <a href="clinics.html" class="active navlink">Clinics</a>
+        </li>
+        <li class="nav-item">
+         <a href="donate.html" class="navlink">Donate</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</head>
+
+
+<body>
+<div class="container">
+<br>
+
+<div class="row">
+
+<div class="col-4 col-lg-2 pr-0">
+<div class="clinictab">
+  <button class="clinictablinks" onclick="openClinic(event, 'Alabama')">Alabama</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Alaska')">Alaska</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Arizona')">Arizona</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Arkansas')">Arkansas</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'California')">California</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Colorado')">Colorado</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Connecticut')">Connecticut</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Delaware')">Delaware</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Washington D.C.')">D.C.</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Florida')">Florida</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Georgia')">Georgia</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Hawaii')">Hawaii</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Idaho')">Idaho</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Illinois')">Illinois</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Indiana')">Indiana</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Iowa')">Iowa</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Kansas')">Kansas</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Kentucky')">Kentucky</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Louisiana')">Louisiana</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Maine')">Maine</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Maryland')">Maryland</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Massachussetts')">Massachussetts</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Michigan')">Michigan</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Minnesota')">Minnesota</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Mississippi')">Mississippi</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Missouri')">Missouri</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Montana')">Montana</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Nebraska')">Nebraska</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Nevada')">Nevada</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'New Hampshire')">New Hampshire</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'New Jersey')">New Jersey</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'New Mexico')">New Mexico</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'New York')">New York</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'North Carolina')">North Carolina</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'North Dakota')">North Dakota</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Ohio')">Ohio</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Oklahoma')">Oklahoma</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Oregon')">Oregon</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Pennsylvania')">Pennsylvania</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Puerto Rico')">Puerto Rico</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Rhode Island')">Rhode Island</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'South Carolina')">South Carolina</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'South Dakota')">South Dakota</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Tennessee')">Tennessee</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Texas')">Texas</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Utah')">Utah</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Vermont')">Vermont</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Virginia')">Virginia</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Washington')">Washington</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'West Virginia')">West Virginia</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Wisconsin')">Wisconsin</button>
+  <button class="clinictablinks" onclick="openClinic(event, 'Wyoming')">Wyoming</button>
+</div>
+</div>
+<div class="col-8 col-lg-5 pl-0">
+    <div id="Alabama" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Health Clinics in Alabama:</strong></h3></p>
+  <p><strong> Birmingham Center:</strong>
+	1211 27th Place South
+		Birmingham, AL 35205
+      </p>
+  </div>
+	<div id="Arizona" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Health Clinics in Arizona:</strong></h3></p>
+<p><strong> Flagstaff Health Center:</strong>
+2500 S. Woodlands Village Blvd
+		Flagstaff, AZ 86001
+<p><strong> Glendale Health Center:</strong>
+5771 W. Eugie
+		Glendale, AZ 85304
+<p><strong> Mesa Health Center:</strong>
+1235 S. Gilbert Rd.
+		Mesa, AZ 85204
+<p><strong>	Tempe Regional Health Center:</strong>
+	1837 E Baseline Rd.
+		Tempe, AZ 85283
+<p><strong>	Central Phoenix Health Center:</strong>
+	4751 N 15th Street
+		Phoenix, AZ 85014
+<p><strong> Southern Arizona Regional Health Center:</strong>
+    2255 N. Wyatt Dr.
+		Tucson, AZ 85712
+    </p>
+</div>
+<div id="Alaska" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><h3><strong>Abortion and Women's Health Clinics in Alaska:</strong></h3></p>
+<p><strong>Anchorage Health Center:</strong>
+4001 Lake Otis Parkway #101
+Anchorage, AK 99508
+<p><strong>Fairbanks Health Center:</strong>
+1867 Airport Way, Suite 160B
+Fairbanks, AK 99701
+<p><strong>Juneau Health Center:</strong>
+3231 Glacier Hwy.
+Juneau, AK 99801
+<p><strong>Soldotna Health Center:</strong>
+130 East Redoubt Avenue
+Soldotna, AK 99669
+  </p>
+</div>
+<div id="Arkansas" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Arkansas:</strong></p></h3>
+<p><strong>Little Rock Health Center:</strong>
+5921 W. 12th Street Suite C
+Little Rock, AR 72204
+<p><strong>Little Rock Aldersgate Road Health Center:</strong>
+1501 Aldersgate Rd.
+Little Rock, AR 72205
+  </p>
+</div>
+<div id="California" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in California:</strong></p></h3>
+  <p><strong> Bixby Health Center</strong>
+1057 Kingston Avenue
+Los Angeles, CA 90033
+
+  <p><strong>East Los Angeles Health Center:</strong>
+5068 Whittier Blvd.
+Los Angeles, CA 90022
+
+  <p><strong>First Avenue Family Planning Michelle Wagner Center:</strong>
+2017 First Avenue
+San Diego, CA 92101
+
+  <p><strong>San Jose Central Health Center:</strong>
+1691 The Alameda
+San Jose, CA 95126
+
+  <p><strong>B Street Health Center:</strong>
+201 29th Street, Ste. B
+Sacramento, CA 95816
+
+  <p><strong>San Francisco Health Center:</strong>
+1650 Valencia St
+San Francisco, CA 94110
+
+  <p><strong>Fulton Street Health Center:</strong>
+650 N. Fulton Street
+Fresno, CA 93728
+
+  <p><strong>West Oakland Health Center:</strong>
+1682 7th Street
+Oakland, CA 94607
+
+  <p><strong>Long Beach Health Center:</strong>
+2690 Pacific Avenue, Ste. 370
+Long Beach, CA 90806
+
+  <p><strong>Santa Ana Health Center:</strong>
+1421 E. 17th St.
+Santa Ana, CA 92705
+
+  <p><strong>Bakersfield Health Center:</strong>
+2633 16th Street
+Bakersfield, CA 93301
+
+  <p><strong>Anaheim Health Center:</strong>
+303 W. Lincoln Ave., #105
+Anaheim, CA 92805
+
+<p><strong>El Cajon Center:</strong>
+1685 E. Main Street #301
+El Cajon, CA 92021
+
+  <p><strong>Concord Health Center:</strong>
+2185 Pacheco Street
+Concord, CA 9452
+  </p>
+  </div>
+
+<div id="Colorado" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Colorado:</strong></p></h3>
+  <p><strong>	Alamosa:</strong>
+1560 12th Street #7
+Alamosa, CO 81101
+
+
+  <p><strong>Aurora:</strong>
+1284 S. Abilene St
+Aurora, CO 80012
+  </p>
+  </div>
+  <div id="Connecticut" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Connecticut:</strong></p></h3>
+  <p><strong> Bridgeport Center:</strong>
+4697 Main Street
+Bridgeport, CT 06606
+
+  <p><strong>Danbury Center:</strong>
+44 Main Street
+Danbury, CT 06810
+
+  <p><strong>Danielson Center:</strong>
+87 Westcott Road
+Danielson, CT 06239
+
+  <p><strong>Enfield Center:</strong>
+111 Hazard Ave.
+Enfield, CT 06082
+
+  <p><strong>Hartford North Center:</strong>
+1229 Albany Avenue
+Hartford, CT 06112
+
+  <p><strong>Manchester Center:</strong>
+319B Main Street
+Manchester, CT 06040
+
+  <p><strong>Meriden Center:</strong>
+26 Women's Way
+Meriden, CT 06451
+
+  <p><strong>New Haven Center:</strong>
+345 Whitney Ave
+New Haven, CT 06511
+</p>
+</div>
+
+<div id="Delaware" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Delaware:</strong></p></h3>
+<p><strong>Dover Center:</strong>
+805 S Governors Ave
+Dover, DE 19901
+
+<p><strong>Wilmington Center (DE):</strong>
+625 N Shipley Street
+Wilmington, DE 19801
+</p>
+</div>
+
+<div id="Washington D.C." class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in D.C.:</strong></p></h3>
+<p><strong>Carol Whitehill Moses Center:</strong>
+1225 4th St. NE
+Washington, DC 20002
+
+<p><strong>DuPont Clinic:</strong>
+ 1120 19th St NW,
+Washington, DC 20036
+
+  <p><strong>Washington Surgi-Clinic:</strong>
+2112 F St NW Suite 400,
+Washington, DC 20037
+
+</div>
+
+<div id="Florida" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Florida:</strong></p></h3>
+<p><strong>Boca Raton Health Center:</strong>
+8177 Glades Rd. Bay 25
+Boca Raton, FL 33434
+
+<p><strong>Fort Myers Health Center:</strong>
+8595 College Parkway, Suite 250
+Fort Myers, FL 33919
+
+<p><strong>Jacksonville Health Center:</strong>
+5978 Powers Avenue
+Jacksonville, FL 32217
+
+<p><strong>Kissimmee Health Center:</strong>
+610 Oak Commons Blvd.
+Kissimmee, FL 34741
+
+<p><strong>Golden Glades-Miami Health Center:</strong>
+585 N.W. 161 St. Suites 200-300
+Miami, FL 33169
+
+<p><strong>Kendall Health Center:</strong>
+8900 SW 117th Avenue Unit 207-B
+Miami, FL 33186
+
+<p><strong>Jean Shehan Health Center:</strong>
+1378 Coral Way, 4th Fl
+Miami, FL 33145
+</p>
+</div>
+
+<div id="Georgia" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Georgia:</strong></p></h3>
+<p><strong>Savannah Center:</strong>
+720 East 71st St
+Savannah, GA 31405
+
+<p><strong>East Atlanta Health Center:</strong>
+440 Moreland Avenue SE
+Atlanta, GA 30316
+
+<p><strong>Gwinnett Center:</strong>
+798 Lawrenceville Suwanee Road
+Lawrenceville, GA 30043
+</p>
+</div>
+<div id="Hawaii" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Hawaii:</strong></p></h3>
+<p><strong>Honolulu Health Center:</strong>
+839 S Beretania Street
+Honolulu, HI 96813
+
+<p><strong>Kahului Health Center:</strong>
+140 Hoohana Street, Suite 303 Maui
+Kahului, HI 96732
+
+<p><strong>Women's Options Center:</strong>
+Honolulu, HI 96813
+</p>
+</div>
+
+<div id="Idaho" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Idaho:</strong></p></h3>
+<p><strong>Boise Health Center:</strong>
+3668 N. Harbor Lane
+Boise, ID 83703
+
+<p><strong>Meridian Health Center:</strong>
+2112 East Franklin Road
+Meridian, ID 83642
+
+<p><strong>Twin Falls Health Center:</strong>
+200 Second Ave N.
+Twin Falls, ID 83301
+
+</p>
+</div>
+
+<div id="Illinois" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Illinois:</strong></p></h3>
+<p><strong>Aurora Health Center:</strong>
+3051 E. New York St.
+Aurora, IL 60504
+
+<p><strong>Fairview Heights Health Center:</strong>
+Lakeland Square, 4529 North Illinois St.
+Belleville, IL 62226
+
+<p><strong>Bloomington Health Center:</strong>
+1319 N. Veterans Parkway
+Bloomington, IL 61704
+
+<p><strong>Champaign Health Center:</strong>
+302 E Stoughton St.
+Champaign, IL 61820
+
+<p><strong>Near North Health Center:</strong>
+1200 N LaSalle Street
+Chicago, IL 60610
+
+<p><strong>Roseland Health Center:</strong>
+11250 S Halsted St.
+Chicago, IL 60628
+
+
+<p><strong>Austin Health Center:</strong>
+5937 W Chicago Ave.
+Chicago, IL 60651
+
+<p><strong>Decatur Health Center:</strong>
+3021 N Oakland Ave
+Decatur, IL 62526
+</p>
+</div>
+
+<div id="Indiana" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Indiana:</strong></p></h3>
+<p><strong>Bloomington Health Center:</strong>
+421 S College Ave
+Bloomington, IN 47403
+
+<p><strong>Columbus Health Center:</strong>
+3200 Sycamore Court
+Columbus, IN 47203
+
+<p><strong>Elkhart Health Center:</strong>
+505 S. 3rd Street
+Elkhart, IN 46516
+
+<p><strong>Evansville Health Center:</strong>
+125 N Weinbach #120
+Evansville, IN 47711
+
+<p><strong>Gary Health Center:</strong>
+1124 Broadway
+Gary, IN 46407
+
+<p><strong>Georgetown Health Center:</strong>
+8590 Georgetown Road
+Indianapolis, IN 46268
+
+<p><strong>Hammond Health Center:</strong>
+7131 Indianapolis Blvd.
+Hammond, IN 46324
+
+<p><strong>Lafayette Health Center:</strong>
+964 Mezzanine Dr.
+Lafayette, IN 47905
+
+<p><strong>Merrillville Health Center:</strong>
+8645 Connecticut Street
+Merrillville, IN 46410
+
+<p><strong>Mishawaka Health Center:</strong>
+3005 Grape Rd.
+Mishawaka, IN 46545
+</p>
+</div>
+
+<div id="Iowa" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Iowa:</strong></p></h3>
+<p><strong>Ames Center:</strong>
+2530 Chamberlain Street
+Ames, IA 50014
+</p>
+</div>
+
+<div id="Kansas" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Kansas:</strong></p></h3>
+<p><strong>Comprehensive Health Center:</strong>
+4401 W 109th Street #100
+Overland Park, KS 66211
+
+<p><strong>Wichita Health Center:</strong>
+2226 E Central
+Wichita, KS 67214
+</p>
+</div>
+
+<div id="Kentucky" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Kentucky:</strong></p></h3>
+<p><strong>EMW Women's Surgical Center:(Only clinic that provides abortions in Kentucky)</strong>
+136 W Market St, Louisville, KY 40202
+
+<p><strong>Louisville Health Center:</strong>
+842 South 7th Street
+Louisville, KY 40203
+
+<p><strong>Bluegrass Health Center:</strong>
+268 Southland Drive
+Lexington, KY 40503
+</p>
+</div>
+
+<div id="Louisiana" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Louisiana:</strong></p></h3>
+<p><strong>Baton Rouge Health Center:</strong>
+3825 Government Street
+Baton Rouge, LA 70806
+
+<p><strong>New Orleans Health Center:</strong>
+4636 S Claiborne Ave
+New Orleans, LA 70125
+</p>
+</div>
+
+<div id="Maine" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Maine:</strong></p></h3>
+
+<p><strong>Portland Health Center:</strong>
+443 Congress Street
+Portland, ME 04101
+
+<p><strong>Sanford Health Center:</strong>
+886 Main Street, Ste. 302
+Sanford, ME 04073
+
+<p><strong>Topsham Health Center:</strong>
+4 Bowdoin Mill Island
+Topsham, ME 04086
+</p>
+</div>
+
+<div id="Maryland" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Maryland:</strong></p></h3>
+
+<p><strong>Annapolis Health Center:</strong>
+929 West Street #305
+Annapolis, MD 21401
+
+<p><strong>Baltimore City Health Center:</strong>
+330 North Howard Street
+Baltimore, MD 21201
+
+<p><strong>Easton Health Center:</strong>
+8579 Commerce Drive #102
+Easton, MD 21601
+
+<p><strong>Frederick Health Center:</strong>
+170 Thomas Johnson Drive
+Frederick, MD 21702
+
+<p><strong>Gaithersburg Center:</strong>
+19650 Clubhouse Road #101
+Gaithersburg, MD 20879
+
+<p><strong>Planned Parenthood Prince George’s County:</strong>
+5001 Silver Hill Road Suite #103
+Suitland, MD 20746
+</p>
+</div>
+
+<div id="Massachussetts" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Massachsetts:</strong></p></h3>
+<p><strong>Greater Boston Health Center:</strong>
+1055 Commonwealth Avenue
+Boston, MA 02215
+
+<p><strong>Western Massachusetts Health Center:</strong>
+3550 Main Street, Suite 201
+Springfield, MA 01107
+
+<p><strong>Central Massachusetts Health Center:</strong>
+470 Pleasant Street
+Worcester, MA 01609
+</div>
+
+
+<div id="Michigan" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Michigan:</strong></p></h3>
+<p><strong>Ann Arbor East Health Center:</strong>
+3100 Professional Drive
+Ann Arbor, MI 48104
+
+
+<p><strong>Detroit Health Center:</strong>
+4229 Cass Ave.
+Detroit, MI 48201
+
+
+<p><strong>Ferndale Health Center:</strong>
+23338 Woodward Ave.
+Ferndale, MI 48220
+
+<p><strong>Flint Health Center:</strong>
+G-3371 Beecher Road
+Flint, MI 48532
+
+<p><strong>Irwin/Martin Health Center:</strong>
+425 Cherry St. SE
+Grand Rapids, MI 49503
+
+<p><strong>Kalamazoo Health Center:</strong>
+4201 W Michigan Ave
+Kalamazoo, MI 49006
+
+<p><strong>Lansing Health Center:</strong>
+300 N. Clippert, Ste. 6
+Lansing, MI 48912
+
+<p><strong>Marquette Health Center:</strong>
+1219 N. Third St.
+Marquette, MI 49855
+</p>
+</div>
+
+<div id="Minnesota" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Minnesota:</strong></p></h3>
+<p><strong>Rochester Clinic:</strong>
+1212 7th St. NW
+Rochester, MN 55901
+
+<p><strong>St. Paul Health Center:</strong>
+671 Vandalia St.
+Saint Paul, MN 55114
+
+<p><strong>Minneapolis Clinic:</strong>
+918 W Lake St
+Minneapolis, MN 55408
+
+<p><strong>Duluth Clinic:</strong>
+1001 East Central Entrance, Suite 200
+Duluth, MN 55811
+</p>
+</div>
+
+<div id="Mississippi" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Mississippi:</strong></p></h3>
+<p><strong>Hattiesburg Center:</strong>
+214 South 27th Avenue
+Hattiesburg, MS 39401
+
+<p><strong>Jackson Women's Health Organization:</strong>
+2903 N State St,
+Jackson,MS 39216
+
+<p><strong>Parkgate Pregnancy Clinic:</strong>
+100 Park Gate Ext Ste A1C,
+Tupelo, MS 38801
+</p>
+</div>
+
+<div id="Missouri" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Missouri:</strong></p></h3>
+<p><strong>Reproductive Health Services of PPSLR:</strong>
+4251 Forest Park Avenue
+Saint Louis, MO 63108
+
+<p><strong>Central West End Health Center:</strong>
+4251 Forest Park Avenue
+Saint Louis, MO 63108
+</p>
+</div>
+
+<div id="Montana" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Montana:</strong></p></h3>
+<p><strong>Planned Parenthood West:</strong>
+1844 Broadwater #4
+Billings, MT 59102
+
+<p><strong>Planned Parenthood Heights:</strong>
+100 West Wicks Lane
+Billings, MT 59105
+
+<p><strong>Planned Parenthood Great Falls:</strong>
+211 9th Street South
+Great Falls, MT 59405
+
+<p><strong>Planned Parenthood Helena:</strong>
+1500 Cannon
+Helena, MT 59601
+
+<p><strong>Planned Parenthood Missoula:</strong>
+219 East Main Street
+Missoula, MT 59802
+</p>
+</div>
+
+<div id="Nebraska" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Nebraska:</strong></p></h3>
+<p><strong>Lincoln South Health Center:</strong>
+5631 S. 48th Street
+Lincoln, NE 68516
+
+<p><strong>Northwest Health Center:</strong>
+3105 N. 93rd St
+Omaha, NE 68134
+</p>
+</div>
+<div id="Nevada" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Nevada:</strong></p></h3>
+<p><strong>Las Vegas West Charleston:</strong>
+3220 W Charleston Blvd.
+Las Vegas, NV 89102
+
+<p><strong>Fifth Street Health Center:</strong>
+455 W. 5th Street
+Reno, NV 89503
+</p>
+</div>
+<div id="New Hampshire" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in New Hampshire:</strong></p></h3>
+<p><strong>Keene Health Center:</strong>
+8 Middle Street
+Keene, NH 03431
+
+<p><strong>Manchester Health Center:</strong>
+24 Pennacook Street
+Manchester, NH 03104
+
+<p><strong>Exeter Health Center:</strong>
+108 High Street
+Exeter, NH 03833
+</p>
+</div>
+
+<div id="New Jersey" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in New Jersey:</strong></p></h3>
+<p><strong>Bellmawr:</strong>
+35 East Browning Road
+Bellmawr, NJ 08031
+
+<p><strong>Camden Center:</strong>
+317 Broadway
+Camden, NJ 08103
+
+<p><strong>East Orange Health Center:</strong>
+560 Dr. Martin Luther King Blvd., Ste. 100
+East Orange, NJ 07018
+
+<p><strong>Elizabeth Health Center:</strong>
+1171 Elizabeth Avenue
+Elizabeth, NJ 07201
+
+<p><strong>Englewood Health Center:</strong>
+46 N Van Brunt Street
+Englewood, NJ 07631
+
+<p><strong>Flemington Health Center:</strong>
+349 Rt 31 South
+Flemington, NJ 08822
+
+<p><strong>Freehold Center:</strong>
+800 W Main Street
+Freehold, NJ 07728
+
+<p><strong>Hackensack Health Center:</strong>
+575 Main Street
+Hackensack, NJ 07601
+</p>
+</div>
+
+<div id="New Mexico" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in New Mexico:</strong></p></h3>
+<p><strong>San Mateo PP:</strong>
+701 San Mateo NE
+Albuquerque, NM 87108
+
+  <p><strong>Santa Fe PP:</strong>
+730 St. Michael's Drive, Suite 4B
+Santa Fe, NM 87505
+  </p>
+  </div>
+
+<div id="New York" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in New York:</strong></p></h3>
+  <p><strong>Albany Health Center:</strong>
+855 Central Ave.
+Albany, NY 12206
+
+
+  <p><strong>Amsterdam Center:</strong>
+4803 State Highway/30 KEM Plaza
+Amsterdam, NY 12010
+
+  <p><strong>Batavia Health Center:</strong>
+222 W Main Street
+Batavia, NY 14020
+
+  <p><strong>The Bronx Center:</strong>
+349 E 149th Street, 2nd Floor (next to Citibank)
+Bronx, NY 10451
+
+  <p><strong>Joan Malin Brooklyn Health Center:</strong>
+44 Court Street, 6th Floor
+Brooklyn, NY 11201
+
+  <p><strong>Buffalo Health Center:</strong>
+2697 Main Street
+Buffalo, NY 14214
+
+  <p><strong>Canandaigua Health Center:</strong>
+15 LaFayette Avenue
+Canandaigua, NY 14424
+
+  <p><strong>Canton Center:</strong>
+9 Miner Street
+Canton, NY 13617
+
+  <p><strong>Cobleskill Center:</strong>
+109 Legion Drive
+Cobleskill, NY 12043
+  </p>
+  </div>
+
+<div id="North Carolina" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in North Carolina:</strong></p></h3>
+<p><strong> Charlotte Health Center:</strong>
+700 South Torrence Street
+Charlotte, NC 28204
+68 McDowell St
+
+<p><strong>Chapel Hill Health Center:</strong>
+1765 Dobbins Drive
+Chapel Hill, NC 27514
+
+<p><strong>Asheville Health Center:</strong>
+68 McDowell St
+Asheville, NC 28801
+
+<p><strong>Fayetteville Health Center:</strong>
+4551 Yadkin Rd
+Fayetteville, NC 28303
+
+<p><strong>Wilmington Health Center:</strong>
+1925 Tradd Court
+Wilmington, NC 28401
+
+<p><strong>Winston-Salem Health Center:</strong>
+3000 Maplewood Ave, Ste. 112
+Winston-Salem, NC 27103
+</p>
+</div>
+
+<div id="North Dakota" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in North Dakota:</strong></p></h3>
+<p><strong>Abortion Clinic of Fargo:</strong>
+512 1st Ave N,
+Fargo, ND 58102
+</p>
+</div>
+
+<div id="Ohio" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Ohio:</strong></p></h3>
+<p><strong> Bedford Heights Surgery Center:</strong>
+25350 Rockside Rd
+Bedford Heights, OH 44146
+
+<p><strong>Cincinnati Surgical Center:</strong>
+2314 Auburn Avenue
+Cincinnati, OH 45219
+
+<p><strong>Canton Health Center:</strong>
+2663 Cleveland Ave NW
+Canton, OH 44709
+
+<p><strong>Athens Health Center:</strong>
+1005 East State Street
+Athens, OH 45701
+</p>
+</div>
+
+<div id="Oklahoma" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Oklahoma:</strong></p></h3>
+
+<p><strong>Central Oklahoma City Clinic:</strong>
+619 NW 23rd Street
+Oklahoma City, OK 73103
+
+<p><strong>Edmond Clinic:</strong>
+3431 S. Boulevard, Suite 108
+Edmond, OK 73013
+</p>
+</div>
+
+<div id="Oregon" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Oregon:</strong></p></h3>
+
+<p><strong>Ashland Health Center:</strong>
+1532 Siskiyou Blvd.
+Ashland, OR 97520
+
+<p><strong>Beaverton Health Center:</strong>
+12220 SW First St., Suite 200
+Beaverton, OR 97005
+
+<p><strong>Medford Health Center:</strong>
+125 South Central
+Medford, OR 97501
+
+<p><strong>Salem Health Center:</strong>
+3825 Wolverine St., NE
+Salem, OR 97305
+
+<p><strong>NE Portland Health Center:</strong>
+3727 NE Martin Luther King Jr. Boulevard
+Portland, OR 97212
+
+<p><strong>Eugene-Springfield Health Center:</strong>
+3579 Franklin Blvd
+Eugene, OR 97403
+</p>
+	</div>
+
+<div id= "Pennsylvania" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Pennsylvania:</strong></p></h3
+  <p><strong>Allentown Medical Center:</strong>
+29 North Ninth Street
+Allentown, PA 18101
+
+  <p><strong>Harrisburg Medical Center:</strong>
+1514 North Second Street
+Harrisburg, PA 17102
+
+  <p><strong>Norristown Abortion Center:</strong>
+1221 Powell Street
+Norristown, PA 19401
+
+  <p><strong>Locust Street Surgical Center:</strong>
+1144 Locust Street
+Philadelphia, PA 19107
+
+  <p><strong>Far Northeast Surgical Center:</strong>
+2751 Comly Road
+Philadelphia, PA 19154
+  </p>
+</div>
+
+<div id= "Puerto Rico" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Puerto Rico:</strong></p></h3
+
+  <p><strong>Women's Medical Pavilion:</strong>
+Calle Monaco # 619,
+Carolina, 00982, Puerto Rico
+
+  <p><strong>Centro de Planificacion Familiar:</strong>
+67 Calle Vives, Ponce,
+00730, Puerto Rico
+  </p>
+</div>
+
+<div id= "Rhode Island" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Rhode Island:</strong></p></h3
+  <p><strong>Providence Health Center:</strong>
+175 Broad Street
+Providence, RI 02903
+  <p><strong>Womens Medical Center Of Rhode Island:</strong>
+215 Toll Gate Rd #106,
+Warwick, RI 02886
+  </p>
+</div>
+
+<div id= "South Carolina" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in South Carolina:</strong></p></h3
+<p><strong>Charleston Health Center:</strong>
+1312 Ashley River Road
+Charleston, SC 29407
+
+<p><strong>Columbia Health Center:</strong>
+2712 Middleburg Drive Suite 107
+Columbia, SC 29204
+</p>
+</div>
+
+<div id= "South Dakota" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in South Dakota:</strong></p></h3
+<p><strong>Sioux Falls Clinic:</strong>
+6511 West 41st Street
+Sioux Falls, SD 57106
+</p>
+</div>
+
+
+<div id= "Tennessee" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Tennessee:</strong></p></h3
+<p><strong>Knoxville Health Center:</strong>
+710 North Cherry St.
+Knoxville, TN 37914
+
+<p><strong>Memphis Health Center - Midtown:</strong>
+2430 Poplar Avenue
+Memphis, TN 38112
+</p>
+</div>
+
+<div id= "Texas" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Texas:</strong></p></h3
+<p><strong>North Austin Abortion Services Center:</strong>
+9041 Research #250
+Austin, TX 78758
+
+<p><strong>South Austin Abortion Services Center:</strong>
+201 E. Ben White Blvd. - Bldg. A
+Austin, TX 78704
+
+
+<p><strong>South Dallas Abortion Services Center:</strong>
+7989 West Virginia Drive
+Dallas, TX 75237
+
+<p><strong>El Paso Abortion Services Center:</strong>
+1511 E. Missouri Avenue
+El Paso, TX 79902
+
+<p><strong>Southwest Fort Worth Abortion Services Center:</strong>
+6464 John Ryan Drive - Suite A
+Fort Worth, TX 76132
+
+<p><strong>Planned Parenthood - Harlingen:</strong>
+712 N 77 Sunshine Strip, Ste. 18
+Harlingen, TX 78550
+
+<p><strong>Planned Parenthood Center for Choice Ambulatory Surgical Center:</strong>
+4600 Gulf Freeway, Ste.300
+Houston, TX 77023
+
+<p><strong>Paris Health Center:</strong>
+1735 17th Street NE
+Paris, TX 75460
+</p>
+</div>
+
+<div id= "Utah" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Utah:</strong></p></h3
+<p><strong>Metro Health Center:</strong>
+160 South 1000 East, Suite 120
+Salt Lake City, UT 84102
+
+<p><strong>Ogden Health Center:</strong>
+4387 Harrison Blvd.
+Ogden, UT 84403
+
+
+<p><strong>Salt Lake Health Center:</strong>
+654 South 900 East
+Salt Lake City, UT 84102
+</p>
+</div>
+
+<div id= "Vermont" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Vermont:</strong></p></h3
+<p><strong>Barre Health Center:</strong>
+90 Washington Street
+Barre, VT 05641
+
+<p><strong>Bennington Health Cente:</strong>
+210 South St. Ste. 4
+Bennington, VT 05201
+
+<p><strong>Burlington Health Center:</strong>
+183 Saint Paul Street
+Burlington, VT 05401
+
+<p><strong>Hyde Park Health Center:</strong>
+213 Main St.
+Hyde Park, VT 05655
+
+<p><strong>Rutland Health Center:</strong>
+11 Burnham Avenue
+Rutland, VT 05701
+</p>
+</div>
+
+<div id= "Virginia" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Virginia:</strong></p></h3>
+
+<p><strong>Charlottesville Health Center:</strong>
+2964 Hydraulic Road
+Charlottesville, VA 22901
+
+<p><strong>Hampton Health Center:</strong>
+403 Yale Drive
+Hampton, VA 23666
+
+<p><strong>Richmond Health Center:</strong>
+201 N Hamilton Street
+Richmond, VA 23221
+
+<p><strong>Roanoke Health Center:</strong>
+2207 Peters Creek Road
+Roanoke, VA 24017
+
+<p><strong>Virginia Beach Health Center:</strong>
+515 Newtown Road
+Virginia Beach, VA 23462
+</p>
+</div>
+
+<div id= "Washington" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Washington:</strong></p></h3>
+<p><strong>Eastside-Bellevue Health Center:</strong>
+14730 NE 8th St.
+Bellevue, WA 98007
+
+<p><strong>Bellingham Health Center:</strong>
+1530 Ellis Street
+Bellingham, WA 98225
+
+<p><strong>Everett Health Center:</strong>
+1509 32nd St.
+Everett, WA 98201
+
+<p><strong>Friday Harbor Health Center (San Juan Island):</strong>
+470 Reed Street, Unit 2A
+Friday Harbor, WA 98250
+
+<p><strong>Kennewick Health Center:</strong>
+7426 W. Bonnie Pl.
+Kennewick, WA 99336
+
+<p><strong>Kent Valley Health Center:</strong>
+10056 SE 240th #A
+Kent, WA 98031
+
+<p><strong>Centralia Health Center:</strong>
+1020 W Main Street
+Centralia, WA 98531
+
+<p><strong>Federal Way Health Center:</strong>
+1105 S 348th Street #B103
+Federal Way, WA 98003
+
+<p><strong>Mount Vernon Health Center:</strong>
+1805 E Division Street
+Mount Vernon, WA 98274
+
+<p><strong>Central District Health Center:</strong>
+2001 E Madison
+Seattle, WA 98122
+
+<p><strong>Olympia Health Center:</strong>
+402 Legion Way, Suite 201
+Olympia, WA 98501
+
+<p><strong>Port Angeles Health Center:</strong>
+426 East 8th Street
+Port Angeles, WA 98362
+</p>
+</div>
+
+
+<div id= "West Virginia" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in West Virginia:</strong></p></h3>
+<p><strong>Vienna Health Center:</strong>
+522 Grand Central Ave.
+Vienna, WV 26105
+</p>
+</div>
+
+<div id= "Wisconsin" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Wisconsin:</strong></p></h3>
+<p><strong>Madison East:</strong>
+3706 Orin Road
+Madison, WI 53704
+
+<p><strong>Appleton Central Health Center:</strong>
+508 W Wisconsin Ave, Suite A
+Appleton, WI 54911
+
+<p><strong>Delavan Health Center:</strong>
+312 South 7th Street
+Delavan, WI 53115
+
+<p><strong>Milwaukee-Wisconsin Avenue Health Center:</strong>
+2207 W. Wisconsin Ave
+Milwaukee, WI 53233
+</p>
+</div>
+
+<div id= "Wyoming" class="clinictabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <p><strong><h3>Abortion and Women's Heath Clinics in Wyoming:</strong></p></h3>
+
+<p><strong>Women's Resource Center:</strong>
+4109, 706 W 8th St,
+Gillette, WY 82716
+</p>
+</div>
+
+</div>
+
+<div class="col-12 col-lg-5 pl-0">
+<p><h2>Access to Abortion Clinics:</h2>
+  <br>Accessibility to abortion clinics varies by state. Only one state, New Hampshire, has legally protected access to abortion clinics (this means no protester can come within a certain distance of the buildings). However, many states have only one abortion clinic, making it difficult for many women to reach their clinic because of large distances. For example, in Missouri in 2014, 94% of women lived in counties without abortion clinics.
+</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="finalproject.css">
+  <script src="finalproject.js"> </script>
+</head>
+
+
+<body>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark topnav p-0">
+  <a class="navbar-brand pl-4 title-color" href="#">My Body My Rights</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+      <li class="nav-item active ">
+        <a href="index.html" class="active navlink">Home</a>
+      </li>
+      <li class="nav-item">
+      <a href="news.html" class="navlink">Info & News</a>
+      </li>
+      <li class="nav-item">
+       <a href="otheroptions.html" class="navlink">Other Options</a>
+      </li>
+      <li class="nav-item">
+      <a href="clinics.html" class="navlink">Clinics</a>
+      </li>
+      <li class="nav-item">
+       <a href="donate.html" class="navlink">Donate</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<br>
+
+<div class="namebox">
+  Welcome to My Body My Rights!
+  <p> This website provides information of abortion laws and restrictions in the United States, and locations of abortion clinics in each state (including the District of Columbia and Puerto Rico). We also provide relevant news articles, information on adoption resources and pro-choice organizations that welcome donations. Our goal is to provide easily accessible and factual information for those seeking out or considering abortions.
+</div>
+
+<br>
+<div class="row">
+
+<div class="col-4 col-lg-2 pr-0">
+<div class="tab">
+  <button class="tablinks" onclick="openState(event, 'Alabama')">Alabama</button>
+  <button class="tablinks" onclick="openState(event, 'Alaska')">Alaska</button>
+  <button class="tablinks" onclick="openState(event, 'Arizona')">Arizona</button>
+  <button class="tablinks" onclick="openState(event, 'Arkansas')">Arkansas</button>
+  <button class="tablinks" onclick="openState(event, 'California')">California</button>
+  <button class="tablinks" onclick="openState(event, 'Colorado')">Colorado</button>
+  <button class="tablinks" onclick="openState(event, 'Connecticut')">Connecticut</button>
+  <button class="tablinks" onclick="openState(event, 'Delaware')">Delaware</button>
+  <button class="tablinks" onclick="openState(event, 'Washington D.C.')">D.C.</button>
+  <button class="tablinks" onclick="openState(event, 'Florida')">Florida</button>
+  <button class="tablinks" onclick="openState(event, 'Georgia')">Georgia</button>
+  <button class="tablinks" onclick="openState(event, 'Hawaii')">Hawaii</button>
+  <button class="tablinks" onclick="openState(event, 'Idaho')">Idaho</button>
+  <button class="tablinks" onclick="openState(event, 'Illinois')">Illinois</button>
+  <button class="tablinks" onclick="openState(event, 'Indiana')">Indiana</button>
+  <button class="tablinks" onclick="openState(event, 'Iowa')">Iowa</button>
+  <button class="tablinks" onclick="openState(event, 'Kansas')">Kansas</button>
+  <button class="tablinks" onclick="openState(event, 'Kentucky')">Kentucky</button>
+  <button class="tablinks" onclick="openState(event, 'Louisiana')">Louisiana</button>
+  <button class="tablinks" onclick="openState(event, 'Maine')">Maine</button>
+  <button class="tablinks" onclick="openState(event, 'Maryland')">Maryland</button>
+  <button class="tablinks" onclick="openState(event, 'Massachussetts')">Massachussetts</button>
+  <button class="tablinks" onclick="openState(event, 'Michigan')">Michigan</button>
+  <button class="tablinks" onclick="openState(event, 'Minnesota')">Minnesota</button>
+  <button class="tablinks" onclick="openState(event, 'Mississippi')">Mississippi</button>
+  <button class="tablinks" onclick="openState(event, 'Missouri')">Missouri</button>
+  <button class="tablinks" onclick="openState(event, 'Montana')">Montana</button>
+  <button class="tablinks" onclick="openState(event, 'Nebraska')">Nebraska</button>
+  <button class="tablinks" onclick="openState(event, 'Nevada')">Nevada</button>
+  <button class="tablinks" onclick="openState(event, 'New Hampshire')">New Hampshire</button>
+  <button class="tablinks" onclick="openState(event, 'New Jersey')">New Jersey</button>
+  <button class="tablinks" onclick="openState(event, 'New Mexico')">New Mexico</button>
+  <button class="tablinks" onclick="openState(event, 'New York')">New York</button>
+  <button class="tablinks" onclick="openState(event, 'North Carolina')">North Carolina</button>
+  <button class="tablinks" onclick="openState(event, 'North Dakota')">North Dakota</button>
+  <button class="tablinks" onclick="openState(event, 'Ohio')">Ohio</button>
+  <button class="tablinks" onclick="openState(event, 'Oklahoma')">Oklahoma</button>
+  <button class="tablinks" onclick="openState(event, 'Oregon')">Oregon</button>
+  <button class="tablinks" onclick="openState(event, 'Pennsylvania')">Pennsylvania</button>
+  <button class="tablinks" onclick="openState(event, 'Puerto Rico')">Puerto Rico</button>
+  <button class="tablinks" onclick="openState(event, 'Rhode Island')">Rhode Island</button>
+  <button class="tablinks" onclick="openState(event, 'South Carolina')">South Carolina</button>
+  <button class="tablinks" onclick="openState(event, 'South Dakota')">South Dakota</button>
+  <button class="tablinks" onclick="openState(event, 'Tennessee')">Tennessee</button>
+  <button class="tablinks" onclick="openState(event, 'Texas')">Texas</button>
+  <button class="tablinks" onclick="openState(event, 'Utah')">Utah</button>
+  <button class="tablinks" onclick="openState(event, 'Vermont')">Vermont</button>
+  <button class="tablinks" onclick="openState(event, 'Virginia')">Virginia</button>
+  <button class="tablinks" onclick="openState(event, 'Washington')">Washington</button>
+  <button class="tablinks" onclick="openState(event, 'West Virginia')">West Virginia</button>
+  <button class="tablinks" onclick="openState(event, 'Wisconsin')">Wisconsin</button>
+  <button class="tablinks" onclick="openState(event, 'Wyoming')">Wyoming</button>
+</div>
+</div>
+<div class="col-8 col-lg-3 pl-0">
+    <div id="Alabama" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Alabama</h3>
+  <p><strong>Abortion Rights in Alabama:</strong></p>
+  <p>- Pre-viability: no restrictions before 20 weeks
+	<p>- Post-viability: legal if recipient's health or life is in immediate danger
+  <p>- Partial Birth Abortions: illegal
+	<p>- Telemedicine: not permitted
+	<p>- Waiting Period: 48 hours after state anti-abortion counseling
+	<p>- Consent: one parental consent if under 18 unless court-ordered
+	<p>- Additional: abortions can only be performed by someone with a state license in medicine or osteopathy; healthcare plans and public funds only cover abortions for rape, incest, or to save recipient's life
+	<p>- Pending Legislation: restrictive laws in which all abortions would be illegal except those needed to save the recipient's life
+  </p>
+</div>
+
+<div id="Alaska" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Alaska</h3>
+  <p><strong>Abortion Rights in Alaska:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: no restrictions
+	<p>- Partial Birth Abortions: only legal if used to save recipient's life
+	<p>- Telemedicine: permitted
+  <p>- Waiting Period: none, but recipients must receive state anti-abortion counseling
+  <p>- Consent: one parental consent if under 17 unless court-ordered
+  <p>- Additional: public funds can cover abortions for recipients who qualify for state medical assistance whose health is in danger
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Arizona" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Arizona</h3>
+  <p><strong>Abortion Rights in Arizona:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+	<p>- Post-viability: after 20 weeks, only legal to save recipient's life or health
+	<p>- Partial Birth Abortions: only legal if it is necessary to save recipient's life and is the only way to do so
+	<p>- Telemedicine: not permitted
+	<p>- Waiting Period: 24 hours after state anti-abortion counseling and ultrasound, which is optional to view
+	<p>- Consent: one parental consent if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+  </p>
+</div>
+
+<div id="Arkansas" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Arkansas</h3>
+  <p><strong>Abortion Rights in Arkansas:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+  <p>- Post-viability: after 20 weeks, only legal to save recipient's life or health, or in cases of rape or incest
+  <p>- Partial Birth Abortions: illegal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 48 hours after consent and state anti-abortion counseling
+  <p>- Consent: informed written consent of recipient, one written parental consent if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+  </p>
+</div>
+
+<div id="California" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>California</h3>
+  <p><strong>Abortion Rights in California:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: legal to protect health or life of recipient, or if there is a lethal fetal anomaly detected
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: written consent if under 18
+  <p>- Additional: abortion coverage is required of all private health insurance plans in California
+  <p>- Pending Legislation: none
+  </p>
+</div>
+
+<div id="Colorado" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Colorado</h3>
+  <p><strong>Abortion Rights in Colorado:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: no restrictions
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: parental notification if a minor
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+  </p>
+</div>
+
+<div id="Connecticut" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Connecticut</h3>
+  <p><strong>Abortion Rights in Connecticut:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: legal to preserve life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: if under 16, mandatory counseling and signed consent form, unless in a medical emergency
+  <p>- Additional: public funds cover abortion for recipients who qualify for state medical assistance; victims of sexual assault can request emergency contraceptives
+  <p>- Pending Legislation:
+  </p>
+</div>
+
+<div id="Delaware" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Delaware</h3>
+  <p><strong>Abortion Rights in Delaware:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: legal to save life or health of recipient, or if there is a lethal fetal anomaly detected
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: parental notification 48 hours in advance if under 16 (requirement can be waived)
+  <p>- Additional: abortion would be entirely illegal in Delaware if Roe v. Wade were overturned
+  <p>- Pending Legislation: none
+  </p>
+</div>
+
+<div id="Washington D.C." class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Washington D.C.</h3>
+  <p><strong>Abortion Rights in Washington D.C.:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: no restrictions
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: no requirement
+  <p>- Additional: public funds avaible for abortion in cases of rape or incest
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Florida" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Florida</h3>
+  <p><strong>Abortion Rights in Florida:</strong></p>
+  <p>- Pre-viability: no restrictions before 22 weeks
+  <p>- Post-viability: after 22 weeks, legal to save life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none, but mandatory ultrasound, which is optional to view
+  <p>- Consent: one parental notification if under 18 (not waived in cases of rape or incest)
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Georgia" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Georgia</h3>
+  <p><strong>Abortion Rights in Georgia:</strong></p>
+  <p>- Pre-viability: no restrictions before 20 weeks
+  <p>- Post-viability: after 20 weeks, legal to save life or health of recipient, or if there is a lethal fetal anomaly detected
+  <p>- Partial Birth Abortions: illegal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling
+  <p>- Consent: one parental notification if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: "heartbeat" bill that would ban abortion after about 6 weeks (when a heartbeat can be detected)
+</div>
+
+<div id="Hawaii" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Hawaii</h3>
+  <p><strong>Abortion Rights in Hawaii:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: legal to save life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: none
+  <p>- Additional: public funds can cover abortion for recipients who qualify for state medical assistance
+  <p>- Pending Legislation: none
+  </p>
+</div>
+
+<div id="Idaho" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Idaho</h3>
+  <p><strong>Abortion Rights in Idaho:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: legal only to save life of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling
+  <p>- Consent: one parental consent if under 18
+  <p>- Additional: abortion provider is required to report how many pregnancies the recipient has terminated
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Illinois" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Illinois</h3>
+  <p><strong>Abortion Rights in Illinois:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: legal to save life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: legal
+  <p>- Consent: one parental notification if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+  </p>
+</div>
+
+<div id="Indiana" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Indiana</h3>
+  <p><strong>Abortion Rights in Indiana:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+  <p>- Post-viability: after 20 weeks, legal to preserve life or health of recipient
+  <p>- Partial Birth Abortions: only legal if needed to save the recipient's life
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 18 hours after state anti-abortion counseling and mandatory ultrasound, which is optional to view
+  <p>- Consent: one parental consent if under 18
+  <p>- Additional: for post-viability abortions, two doctors must be present during the procedure
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Iowa" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Iowa</h3>
+  <p><strong>Abortion Rights in Iowa:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+  <p>- Post-viability: after 20 weeks, legal to save life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: one parental consent if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: ban on telemedicine
+</div>
+
+<div id="Kansas" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Kansas</h3>
+  <p><strong>Abortion Rights in Kansas:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+  <p>- Post-viability: after 20 weeks, legal to preserve life or health of recipient
+  <p>- Partial Birth Abortions: illegal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling and mandatory ultrasound, which is optional to view
+  <p>- Consent: one parental consent if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Kentucky" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Kentucky</h3>
+  <p><strong>Abortion Rights in Kentucky:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+  <p>- Post-viability: after 20 weeks, only legal to save life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling and mandatory ultrasound, which is optional to view
+  <p>- Consent: one parental consent if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: "hearbeat" bill that would ban abortion after 6 weeks (when a heartbeat can be detected)
+</div>
+
+<div id="Louisiana" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Louisiana</h3>
+  <p><strong>Abortion Rights in Luoisiana:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+  <p>- Post-viability: after 20 weeks, only legal to save life or health of recipient
+  <p>- Partial Birth Abortions: only legal if necessary to save life of recipient
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling and mandatory ultrasound, which is optional to view
+  <p>- Consent: one parental consent if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: "heartbeat" bill that would ban abortion after 6 weeks (when a heartbeat can be detected)
+</div>
+
+<div id="Maine" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Maine</h3>
+  <p><strong>Abortion Rights in Maine:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: only legal if used to preserve life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: informed written consent; one written parental consent if under 18
+  <p>- Additional: public funds can cover abortion if the recipient's life is threatened or in cases of rape or incest
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Maryland" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Maryland</h3>
+  <p><strong>Abortion Rights in Maryland:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: legal to save life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: one parental consent if under 18 (can be waived)
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Massachussetts" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Massachussetts</h3>
+  <p><strong>Abortion Rights in Massachussetts:</strong></p>
+  <p>- Pre-viability: no restrictions until 22 weeks
+  <p>- Post-viability: after 22 weeks, legal to save life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: one parental consent if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Michigan" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Michigan</h3>
+  <p><strong>Abortion Rights in Michigan:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: only legal to save life of recipient
+  <p>- Partial Birth Abortions: only legal if necessary to protect recipient's life
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling
+  <p>- Consent: one parental consent if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Minnesota" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Minnesota</h3>
+  <p><strong>Abortion Rights in Minnesota:</strong></p>
+  <p>- Pre-viability: no restrictions
+  <p>- Post-viability: only legal to save life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling
+  <p>- Consent: parental notification if under 18
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Mississippi" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Mississippi</h3>
+  <p><strong>Abortion Rights in Mississippi:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+  <p>- Post-viability: to save recipient's life (with written advice of two doctors); in cases of rape if charges have been filed
+  <p>- Partial Birth Abortions: illegal
+	<p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after consent, state anti-abortion counseling and mandatory ultrasound, which is optional to view
+  <p>- Consent: written consent; both parental consents if a minor
+  <p>- Additional: none
+  <p>- Pending Legislation: "heartbeat" bill that would ban abortion after 6 weeks (when a heartbeat can be detected)
+</div>
+
+<div id="Missouri" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Missouri</h3>
+  <p><strong>Abortion Rights in Missouri:</strong></p>
+  <p>- Pre-viability: no restrictions until 16 weeks, after 16 weeks must be in a hospital
+	<p>- Post-viability: only legal if doctor deems abortion medically necessary and lists a specific method
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 72 hours after state anti-abortion counseling
+  <p>- Consent: informed written consent; one informed written parental consent if under 17
+  <p>- Additional: recipients under 17 must be accompanied by a parent/guardian to receive the procedure
+  <p>- Pending Legislation: introduced complete abortion ban
+</div>
+
+<div id="Montana" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Montana</h3>
+  <p><strong>Abortion Rights in Montana:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: legal if used to preserve the recipeint's life/health
+  <p>- Partial Birth Abortions: only legal if used to protect recipient's life
+	<p>- Telemedicine: permitted
+	<p>- Waiting Period: none
+	<p>- Consent: none (law currently waived)
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Nebraska" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Nebraska</h3>
+  <p><strong>Abortion Rights in Nebraska:</strong></p>
+  <p>- Pre-viability: for abuse/neglect and with written proof the pregnancy is a threat to a recipient's life/health
+	<p>- Post-viability: legal to protect life/health of the mother
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling (waived for emergencies)
+  <p>- Consent: one written parental consent 48 hours in advance if under 18 (waived if woman is found to be "mature")
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Nevada" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Nevada</h3>
+  <p><strong>Abortion Rights in Nevada:</strong></p>
+  <p>- Pre-viability: no restrictions until 22 weeks
+	<p>- Post-viability: after 22 weeks, legal to preserve life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: informed consent; one parental consent if under 18 (can be waived)
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="New Hampshire" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>New Hampshire</h3>
+  <p><strong>Abortion Rights in New Hampshire:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: no restrictions
+  <p>- Partial Birth Abortions: legal if used to protect recipient's life
+	<p>- Telemedicine: permitted
+	<p>- Waiting Period: none
+	<p>- Consent: 48 hours in advance for a minor
+  <p>- Additional: access to abortion clinics is protected by law (no obstructions, etc.)
+  <p>- Pending Legislation: none
+</div>
+
+<div id="New Jersey" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>New Jersey</h3>
+  <p><strong>Abortion Rights in New Jersey:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: no restrictions
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: none
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="New Mexico" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>New Mexico</h3>
+  <p><strong>Abortion Rights in New Mexico:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: no restrictions
+  <p>- Partial Birth Abortions: illegal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: abortion must be performed at recipient's request
+  <p>- Additional: an unenforced law requires post-viability abortions to be "justified medical terminations"
+  <p>- Pending Legislation: none
+</div>
+
+<div id="New York" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>New York</h3>
+  <p><strong>Abortion Rights in New York:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: legal if to protect lifeor health of recipient, or if pregnancy is not viable
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: none
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="North Carolina" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>North Carolina</h3>
+  <p><strong>Abortion Rights in North Carolina:</strong></p>
+  <p>- Pre-viability: no restrictions until 18 weeks
+	<p>- Post-viability: after 18 weeks, legal to protect recipient's life or health
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 72 hours after state anti-abortion counseling and mandatory ultrasound
+  <p>- Consent: written consent and one written parental consent, if a minor (can be waived)
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="North Dakota" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>North Dakota</h3>
+  <p><strong>Abortion Rights in North Dakota:</strong></p>
+  <p>- Pre-viability: no restrictions until 12 weeks
+	<p>- Post-viability: after 12 weeks, legal if used to preserve recipient's life, physical or mental health
+  <p>- Partial Birth Abortions: legal if needed to protect recipient's life
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after consent and state anti-abortion counseling
+  <p>- Consent: informed consent; two parental notifications 24 hours before consent if a minor; spousal (or parental) consent if post-viability abortion
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Ohio" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Ohio</h3>
+  <p><strong>Abortion Rights in Ohio:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+	<p>- Post-viability: after 20 weeks, legal if to save life or health of recipient
+  <p>- Partial Birth Abortions: illegal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling
+  <p>- Consent: informed consent; parental consent 24 hours in advance if a minor (can be waived)
+  <p>- Additional: none
+  <p>- Pending Legislation: "heartbeat" bill that would ban abortions after 6 weeks (when a heartbeat can be detected)
+</div>
+
+<div id="Oklahoma" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Oklahoma</h3>
+  <p><strong>Abortion Rights in Oklahoma:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+	<p>- Post-viability: after 20 weeks, legal if necessary to preserve life or health of recipient
+  <p>- Partial Birth Abortions: legal if used to save life of recipient
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 72 hours after state anti-abortion counseling
+  <p>- Consent: parental notification and consent if a minor
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Oregon" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Oregon</h3>
+  <p><strong>Abortion Rights in Oregon:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: no restrictions
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: none
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Pennsylvania" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Pennsylvania</h3>
+  <p><strong>Abortion Rights in Pennsylvania:</strong></p>
+  <p>- Pre-viability: must be “medically necessary” according to a doctor
+	<p>- Post-viability: after 24 weeks, legal if necessary to preserve a recipient's life or health or prevent serious damage
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after consent and state anti-abortion counseling
+  <p>- Consent: recipient's consent; parental consent if a minor
+  <p>- Additional: there is an unconstitutional law requiring spousal notification
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Puerto Rico" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Puerto Rico</h3>
+  <p><strong>Abortion Rights in Puerto Rico:</strong></p>
+  <p>- Pre-viability: only to protect mother’s physical and mental health, socioeconomic well-being (technically unconstitutional)
+	<p>- Post-viability: when used to protect woman’s life/health
+  <p>- Partial Birth Abortions: legal (?)
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none (?)
+  <p>- Consent: none
+  <p>- Additional: abortion has been less regulated and more difficult to receive since the damage caused by Hurrican Maria
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Rhode Island" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Rhode Island</h3>
+  <p><strong>Abortion Rights in Rhode Island:</strong></p>
+  <p>- Pre-viability: none
+	<p>- Post-viability: legal if used to save recipient's life
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: informed consent; one parental consent if a minor; spousal consent when "reasonably possible"
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="South Carolina" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>South Carolina</h3>
+  <p><strong>Abortion Rights in South Carolina:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+	<p>- Post-viability: after 20 weeks, legal to save recipient’s life with written consent of two doctors, or two doctors + psychiatrist for mental health purposes
+  <p>- Partial Birth Abortions: legal only if used save recipient's life
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling
+  <p>- Consent: written consent; parental consent if under 17 (except in cases of incest)
+  <p>- Additional: court can deny an abortion for a minor if they are "immature" and without parental consent; recipient can be fined $1,000 or serve up to 2 years for "self-abortion" or consenting to an illegal abortion
+  <p>- Pending Legislation: none
+</div>
+
+<div id="South Dakota" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>South Dakota</h3>
+  <p><strong>Abortion Rights in South Dakota:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+	<p>- Post-viability: after 20 weeks, legal to protect life or health of recipient
+  <p>- Partial Birth Abortions: legal if used to save recipient's life
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 72 hours after state anti-abortion counseling
+  <p>- Consent: written consent; parental notification 48 hours in advance if a minor
+  <p>- Additional: before the state counseling, recipients are requited to have an initial meeting with a doctor
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Tennessee" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Tennessee</h3>
+  <p><strong>Abortion Rights in Tennessee:</strong></p>
+  <p>- Pre-viability: no restrictions, but require consent and advice of doctor
+	<p>- Post-viability: legal only to save life or health of recipient
+  <p>- Partial Birth Abortions: legal only to save recipient's life
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 48 hours after state anti-abortion counseling
+  <p>- Consent: one parental consent if a minor (can be waived)
+  <p>- Additional: recipients can be charged/conficted; attempting to induce miscarriage, class E felony; Class A misdemeanor for “coercion to obtain abortion”
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Texas" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Texas</h3>
+  <p><strong>Abortion Rights in Texas:</strong></p>
+  <p>- Pre-viability: no restrictions before 20 weeks
+	<p>- Post-viability: after 20 weeks, legal only to protect recipient’s life, physical/mental health, or “serious impairment”/extreme (lethal) fetal abnormalities
+  <p>- Partial Birth Abortions: legal only to save recipient's life
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling and ultrasound, which must be displayed and described
+  <p>- Consent: parental notification and consent if a minor
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Utah" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Utah</h3>
+  <p><strong>Abortion Rights in Utah:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: necessary to save recipient’s life; cases or rape or incest; fetus has diagnosed lethal defect
+  <p>- Partial Birth Abortions: legal if used to save recipient's life
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: 72 hours after state anti-abortion counseling
+  <p>- Consent: parental notification and consent if a minor (can be waived)
+  <p>- Additional: none
+  <p>- Pending Legislation: ban on abortion after 18 weeks (except for rape/incest, fatal defects/brain damage in fetus or to save recipient’s life)
+</div>
+
+<div id="Vermont" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Vermont</h3>
+  <p><strong>Abortion Rights in Vermont:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: no restrictions
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: none
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Virginia" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Virginia</h3>
+  <p><strong>Abortion Rights in Virginia:</strong></p>
+  <p>- Pre-viability: no restrictions until third trimester
+	<p>- Post-viability: during third trimester, legal to preserve recipient’s life, physical/mental health
+  <p>- Partial Birth Abortions: legal if used to save recipient's life
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling and ultrasound
+  <p>- Consent: informed writted consent; parental notification and consent if a minor
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Washington" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Washington</h3>
+  <p><strong>Abortion Rights in Washington:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: legal to protect life/health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: none
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="West Virginia" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>West Virginia</h3>
+  <p><strong>Abortion Rights in West Virginia:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+	<p>- Post-viability: after 20 weeks, legal to save life or health of recipient
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling
+  <p>- Consent: parental notification 48 hours in advance, if a minor (can be waived)
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Wisconsin" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Wisconsin</h3>
+  <p><strong>Abortion Rights in Wisconsin:</strong></p>
+  <p>- Pre-viability: no restrictions until 20 weeks
+	<p>- Post-viability: after 20 weeks, legal if used to save recipient’s life or recommended by two doctors
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: not permitted
+  <p>- Waiting Period: 24 hours after state anti-abortion counseling and ultrasound, which must me displayed and described
+  <p>- Consent: informed writted consent and one parental consent if a minor (can be waived)
+  <p>- Additional: recipients can serve up to 2 years for the consent to or self-abortion of a quick child
+  <p>- Pending Legislation: none
+</div>
+
+<div id="Wyoming" class="tabcontent">
+  <span class="xbutton" onclick="this.parentElement.style.display='none'"> x</span>
+  <h3>Wyoming</h3>
+  <p><strong>Abortion Rights in Wyoming:</strong></p>
+  <p>- Pre-viability: no restrictions
+	<p>- Post-viability: legal if necessary to preserve health or life of recipient as deemed by a doctor/other medical authority
+  <p>- Partial Birth Abortions: legal
+  <p>- Telemedicine: permitted
+  <p>- Waiting Period: none
+  <p>- Consent: written consent and parental written consent 48 hours in advance (can be waived)
+  <p>- Additional: none
+  <p>- Pending Legislation: none
+</div>
+
+</div>
+
+<div class="col-12 col-lg-7 maptext">
+    <img src="usa.svg" style="max-width: 100%;">
+    <p> This map illustrates our rating scale of which states have the harshest abortion laws.
+    <br> Dark = States with Most Restrictive Laws; Pale = States with Least Restrictive Laws
+    <p style = "font-family:georgia,garamond,serif;font-size:30px;font-style:italic;">
+    <p><h4>How did we rate the states for this map?</h4>
+    <p> To come up with a comprehensive rating scale, we used a point system based on how many restrictions states had implemented. We used seven categories of restrictions to rate each state: telemedicine, pre-viability restrictions, post-viability restrictions, restrictions on partial birth abortions, ultrasound requirements, counseling requirements, waiting periods, and consent requirements.
+    <p> For example, Idaho received a score of 5 because of its moderately restrictive laws:
+    <br> post-viability restrictions (2 points) + counseling requirements (1 point) + waiting period (1 point) + consent requirement (1 point) = 5 points
+</div>
+
+</div>
+</div>
+
+
+</body>
+
+</html>
