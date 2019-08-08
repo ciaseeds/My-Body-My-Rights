@@ -26,6 +26,7 @@
 
 .navbar-brand {
   font-family: "Lucida Console", monospace;
+  color: gold !important;
 }
 
 .title-color {
